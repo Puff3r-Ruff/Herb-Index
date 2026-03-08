@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horse Chestnut – Key Medical Plant</title>
+  <meta name="description" content="Profile of Horse Chestnut (Aesculus hippocastanum) including habitat, constituents, actions, traditional and current uses, preparations and self-help applications.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      color: #777;
+      background: #eee;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d3326, #2f5a42);
+      color: #fff;
+      padding: 2.5rem 1.5rem;
+      text-align: left;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #cfe8d4;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* NAVIGATION BAR */
+    nav {
+      background: #1f3a2e;
+      padding: 0.8rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      border-bottom: 3px solid #c2a878;
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    nav a {
+      color: #e8f5e9;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: #c2a878;
+      text-shadow: 0 0 6px rgba(194,168,120,0.6);
+    }
+
+    /* HAMBURGER BUTTON */
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: #e8f5e9;
+      cursor: pointer;
+      background: none;
+      border: none;
+      position: absolute;
+      right: 1.5rem;
+      top: 0.7rem;
+    }
+
+    /* MOBILE DROPDOWN */
+    @media (max-width: 700px) {
+      nav {
+        padding: 1.8rem 1.5rem;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding-top: 1rem;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    section {
+      background: #ffffff;
+      color: #222;
+      padding: 1.5rem 1.8rem;
+      border-radius: 12px;
+      margin-bottom: 1.8rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+      animation: fadeIn 0.8s ease;
+    }
+
+    .herb-hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .herb-hero img {
+      max-width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
+
+    .herb-meta {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .latin-name {
+      margin-top: 0.1rem;
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .meta-list p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+    }
+
+    .pill-tags span {
+      display: inline-block;
+      background: #f0f5f1;
+      border-radius: 999px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.85rem;
+      margin: 0.15rem;
+      border: 1px solid #c2e0c9;
+    }
+
+    h2.section-title {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #23402e;
+      border-bottom: 2px solid #c2a878;
+      padding-bottom: 0.3rem;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: #fff8e6;
+      border-left: 4px solid #c2a878;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      color: #333;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .disclaimer {
+      font-size: 0.85rem;
+      color: #444;
+      border-top: 1px solid #ddd;
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      background: #ffffff;
+    }
+
+    footer {
+      background: #1d3326;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Horse Chestnut</h1>
+    <p class="tagline">Aesculus hippocastanum – A traditional European tree valued for circulatory wellness</p>
+  </header>
+
+  <!-- NAVIGATION WITH MOBILE DROPDOWN -->
+  <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="../TheDevelopmentOfHerbalMedicine.html">Development of Herbal Medicine</a></li>
+      <li><a href="../theherbindex.html">Herb Index</a></li>
+      <li><a href="remedies.html">Remedies</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("show");
+    }
+  </script>
+
+  <main>
+
+    <section>
+      <div class="herb-hero">
+        <img src="images/chestnut.jpg" alt="Horse Chestnut plant">
+
+        <div class="herb-meta">
+          <h1>Horse Chestnut</h1>
+          <p class="latin-name"><em>Aesculus hippocastanum</em></p>
+
+          <div class="meta-list">
+            <p><strong>Habitat:</strong> Native to southeastern Europe; now widely planted across temperate regions.</p>
+            <p><strong>Plant parts used:</strong> Seeds (the “chestnuts”), bark, and occasionally leaves.</p>
+          </div>
+
+          <div class="pill-tags">
+            <span>Circulatory wellness</span>
+            <span>Leg comfort</span>
+            <span>Tissue tone support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HIGHLIGHT SECTION -->
+      <div class="highlight">
+        <strong>Common Traditional Uses:</strong>
+        <div class="pill-tags" style="margin-top:0.6rem;">
+          <span>Healthy vein tone</span>
+          <span>Leg vitality</span>
+          <span>Tissue strength</span>
+          <span>General circulatory support</span>
+          <span>Traditional external applications</span>
+        </div>
+      </div>
+
+      <h2 class="section-title">Constituents</h2>
+      <p>
+        Horse Chestnut contains saponins (notably aescin), flavonoids, tannins, and plant sterols. These compounds have been studied for their roles in supporting normal vein tone and general circulatory wellness.
+      </p>
+
+      <h2 class="section-title">Actions</h2>
+      <p>
+        Traditionally, Horse Chestnut has been valued for its toning, strengthening, and circulatory-supporting qualities. It has long been used in European herbal practice to promote comfort in the legs and support healthy tissue integrity.
+      </p>
+
+      <h2 class="section-title">Traditional uses</h2>
+      <p>
+        In European folk medicine, Horse Chestnut preparations were commonly applied to support leg comfort, promote a sense of lightness, and maintain healthy circulation. The seeds were often used in topical preparations for general tissue tone.
+      </p>
+
+      <h2 class="section-title">Current uses & research</h2>
+      <p>
+        Today, Horse Chestnut is widely used in herbal practice to support vein health and leg vitality. Research continues to explore the role of aescin in maintaining normal vascular tone and fluid balance.
+      </p>
+
+      <h2 class="section-title">Key preparations</h2>
+      <ul>
+        <li><strong>Extracts:</strong> Common in modern herbal supplements.</li>
+        <li><strong>Tincture:</strong> Traditionally prepared from the seeds.</li>
+        <li><strong>Topical gels/creams:</strong> Used in traditional herbal practice for leg comfort.</li>
+      </ul>
+
+      <h2 class="section-title">Practical self-help uses</h2>
+      <p>
+        Horse Chestnut is often included in herbal blends intended to support leg vitality and general circulatory comfort. Topical preparations have a long history of use in traditional self-care. These uses reflect herbal tradition rather than medical treatment.
+      </p>
+
+      <section class="disclaimer">
+        <strong>Disclaimer:</strong>
+        <p>
+          This profile is an original summary based on general herbal knowledge. It is not a copy of any specific book or source. The information is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
+        </p>
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Herbal Knowledge 2026</p>
+  </footer>
+
+</body>
+</html>

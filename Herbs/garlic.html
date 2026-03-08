@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Garlic – Key Medical Plant</title>
+  <meta name="description" content="Profile of Garlic (Allium sativum) including habitat, constituents, actions, traditional and current uses, preparations and self-help applications.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      color: #777;
+      background: #eee;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d3326, #2f5a42);
+      color: #fff;
+      padding: 2.5rem 1.5rem;
+      text-align: left;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #cfe8d4;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* NAVIGATION BAR */
+    nav {
+      background: #1f3a2e;
+      padding: 0.8rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      border-bottom: 3px solid #c2a878;
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    nav a {
+      color: #e8f5e9;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: #c2a878;
+      text-shadow: 0 0 6px rgba(194,168,120,0.6);
+    }
+
+    /* HAMBURGER BUTTON */
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: #e8f5e9;
+      cursor: pointer;
+      background: none;
+      border: none;
+      position: absolute;
+      right: 1.5rem;
+      top: 0.7rem;
+    }
+
+    /* MOBILE DROPDOWN */
+    @media (max-width: 700px) {
+      nav {
+        padding: 1.8rem 1.5rem;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding-top: 1rem;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    section {
+      background: #ffffff;
+      color: #222;
+      padding: 1.5rem 1.8rem;
+      border-radius: 12px;
+      margin-bottom: 1.8rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+      animation: fadeIn 0.8s ease;
+    }
+
+    .herb-hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .herb-hero img {
+      max-width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
+
+    .herb-meta {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .latin-name {
+      margin-top: 0.1rem;
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .meta-list p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+    }
+
+    .pill-tags span {
+      display: inline-block;
+      background: #f0f5f1;
+      border-radius: 999px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.85rem;
+      margin: 0.15rem;
+      border: 1px solid #c2e0c9;
+    }
+
+    h2.section-title {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #23402e;
+      border-bottom: 2px solid #c2a878;
+      padding-bottom: 0.3rem;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: #fff8e6;
+      border-left: 4px solid #c2a878;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      color: #333;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .disclaimer {
+      font-size: 0.85rem;
+      color: #444;
+      border-top: 1px solid #ddd;
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      background: #ffffff;
+    }
+
+    footer {
+      background: #1d3326;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Garlic</h1>
+    <p class="tagline">Allium sativum – A globally treasured bulb with a long history in food and herbal tradition</p>
+  </header>
+
+  <!-- NAVIGATION WITH MOBILE DROPDOWN -->
+  <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="../TheDevelopmentOfHerbalMedicine.html">Development of Herbal Medicine</a></li>
+      <li><a href="../theherbindex.html">Herb Index</a></li>
+      <li><a href="remedies.html">Remedies</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("show");
+    }
+  </script>
+
+  <main>
+
+    <section>
+      <div class="herb-hero">
+        <img src="images/garlic.jpg" alt="Garlic bulb">
+
+        <div class="herb-meta">
+          <h1>Garlic</h1>
+          <p class="latin-name"><em>Allium sativum</em></p>
+
+          <div class="meta-list">
+            <p><strong>Habitat:</strong> Cultivated worldwide; thrives in temperate climates with well‑drained soil.</p>
+            <p><strong>Plant parts used:</strong> Bulb (fresh or dried).</p>
+          </div>
+
+          <div class="pill-tags">
+            <span>Traditional antimicrobial herb</span>
+            <span>Immune-supporting</span>
+            <span>Circulatory vitality</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HIGHLIGHT SECTION -->
+      <div class="highlight">
+        <strong>Common Traditional Uses:</strong>
+        <div class="pill-tags" style="margin-top:0.6rem;">
+          <span>Traditional antimicrobial support</span>
+          <span>Seasonal wellness</span>
+          <span>Respiratory comfort</span>
+          <span>Digestive warmth</span>
+          <span>General vitality</span>
+          <span>Cleansing herb</span>
+        </div>
+      </div>
+
+      <h2 class="section-title">Constituents</h2>
+      <p>
+        Garlic contains sulfur‑rich compounds such as allicin, along with flavonoids, saponins, and essential oils. These constituents contribute to its strong aroma and its long‑standing role in traditional herbal practices.
+      </p>
+
+      <h2 class="section-title">Actions</h2>
+      <p>
+        Traditionally, Garlic has been valued for its warming, stimulating, and cleansing qualities. It has been used to support microbial balance, promote general vitality, and maintain healthy circulation.
+      </p>
+
+      <h2 class="section-title">Traditional uses</h2>
+      <p>
+        Garlic has been used for thousands of years across Europe, Asia, and the Middle East. It was commonly included in food and herbal preparations to support resilience, digestive warmth, and overall well‑being. Many cultures regarded it as a protective and strengthening plant.
+      </p>
+
+      <h2 class="section-title">Current uses & research</h2>
+      <p>
+        Today, Garlic remains popular in herbal practice for general circulatory wellness, seasonal support, and everyday vitality. Research continues to explore its sulfur compounds and their potential roles in supporting normal physiological functions.
+      </p>
+
+      <h2 class="section-title">Key preparations</h2>
+      <ul>
+        <li><strong>Fresh garlic:</strong> Used traditionally in food and herbal preparations.</li>
+        <li><strong>Garlic oil:</strong> Made by macerating garlic in oil.</li>
+        <li><strong>Capsules / tablets:</strong> Common modern supplement forms.</li>
+      </ul>
+
+      <h2 class="section-title">Practical self-help uses</h2>
+      <p>
+        Garlic is often included in traditional blends for seasonal wellness, digestive warmth, and general vitality. These uses reflect long‑standing herbal traditions rather than medical treatment.
+      </p>
+
+      <section class="disclaimer">
+        <strong>Disclaimer:</strong>
+        <p>
+          This profile is an original summary based on general herbal knowledge. It is not a copy of any specific book or source. The information is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
+        </p>
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Herbal Knowledge 2026</p>
+  </footer>
+
+</body>
+</html>
